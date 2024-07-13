@@ -1,0 +1,71 @@
+header {
+  height: 70px;
+  width: 86vw;
+  background: transparent;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 7vw;
+  position: fixed;
+  z-index: 5000;
+}
+header nav ul {
+  height: 70px;
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+header nav ul li a {
+  color: #000;
+  font-family: Zhizn;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  overflow: hidden;
+}
+header nav ul li a::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px;
+  background-color: #4056A1;
+  transition: all 0.5s ease;
+}
+header nav ul li a:hover {
+  color: #4056A1;
+}
+header nav ul li a:hover::after {
+  display: flex;
+  width: 100%;
+}
+header nav ul li a.active {
+  font-weight: 700;
+}
+header .admin {
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #FC0;
+  height: 60%;
+  position: relative;
+  bottom: -20%;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+header .admin p {
+  text-wrap: nowrap;
+  color: #000;
+  font-family: Zhizn;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  overflow: hidden;
+}
+header .admin img {
+  position: relative;
+  top: -3px;
+  width: 20px;
+}

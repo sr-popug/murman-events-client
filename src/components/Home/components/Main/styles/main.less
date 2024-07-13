@@ -1,0 +1,146 @@
+section.main {
+	width: 100vw;
+	height: fit-content;
+
+	.bg {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 100vw;
+		z-index: -1;
+		top: 0;
+		.row {
+			display: flex;
+			margin-top: 80px;
+			margin-right: 7vw;
+			&:nth-child(1) {
+				height: 50px;
+				justify-content: space-between;
+				.circle {
+					border-color: #fc0;
+					position: relative;
+					left: 20vw;
+					bottom: 40px;
+				}
+				.point {
+					border-color: #0eef28;
+					align-self: start;
+					&:nth-child(2) {
+						border-color: #d9472a;
+						align-self: end;
+						position: relative;
+						left: -100px;
+					}
+				}
+			}
+			&:nth-child(2) {
+				height: 150px;
+				width: 7vw;
+				justify-content: center;
+				align-items: end;
+				.point {
+					border-color: #4056a1;
+				}
+			}
+			&:nth-child(3) {
+				height: 150px;
+				width: 100vw;
+				margin-top: 180px;
+				justify-content: space-between;
+				width: 60vw;
+				margin-left: 5vw;
+				align-items: end;
+				.circle {
+					border-color: #d9472a;
+					position: relative;
+					bottom: -20px;
+				}
+				.sq {
+					border-color: #0eef28;
+					transform: rotate(30.923deg);
+					position: relative;
+					bottom: 20px;
+				}
+				.point {
+					position: relative;
+					right: -5vw;
+					border-color: #4056a1;
+				}
+			}
+			&:nth-child(4) {
+				height: 150px;
+				width: 70vw;
+				justify-content: center;
+				margin-top: 100px;
+				.point {
+					border-color: #fc0;
+				}
+			}
+		}
+	}
+	.content {
+		display: flex;
+		flex-wrap: wrap-reverse;
+
+		align-items: center;
+		justify-content: center;
+		min-height: 100vh;
+		height: fit-content;
+		gap: 10px;
+		.left {
+			h1 {
+				margin-bottom: 30px;
+				color: #000;
+				font-family: Zhizn;
+				font-size: 102px;
+				font-style: normal;
+				font-weight: 900;
+				line-height: normal;
+				width: 500px;
+			}
+			p.description {
+				width: 368px;
+				color: #000;
+				font-family: Zhizn;
+				font-size: 28px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
+		}
+		.photo {
+			img {
+				width: 675px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1170px) {
+	section.main {
+		.bg {
+			display: none;
+		}
+		.content {
+			.left {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				h1 {
+					font-size: 80px;
+					width: 90vw;
+					text-align: center;
+				}
+				p.description {
+					width: 80vw;
+					text-align: center;
+				}
+			}
+			.photo {
+				margin-top: 100px;
+				img {
+					width: 90vw;
+				}
+			}
+		}
+	}
+}

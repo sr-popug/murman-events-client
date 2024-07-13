@@ -1,0 +1,97 @@
+section.admin {
+	width: 100vw;
+	min-height: 100vh;
+	height: fit-content;
+	.error {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		h2 {
+			color: #000;
+			font-family: Zhizn;
+			font-size: 90px;
+			font-style: normal;
+			font-weight: 900;
+			line-height: normal;
+		}
+		strong {
+			color: #ef330e;
+			font-family: Open Sans SemiCondensed;
+			font-size: 30px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+		}
+	}
+	.a-panel {
+		h2 {
+			color: #000;
+			font-family: Zhizn;
+			font-size: 50px;
+			font-style: normal;
+			font-weight: 900;
+			line-height: normal;
+			margin-top: 100px;
+			text-align: center;
+		}
+		.menu {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 100px;
+			min-height: 50vh;
+			height: fit-content;
+			flex-wrap: wrap;
+			margin-top: 30px;
+			margin-bottom: 30px;
+
+			.elem {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				padding: 10px;
+				height: 200px;
+				border-radius: 10px;
+				background-color: #fc0;
+				gap: 10px;
+				h3 {
+					color: #000;
+					font-family: Open Sans SemiCondensed;
+					font-size: 36px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+					width: 150px;
+					text-align: center;
+				}
+			}
+		}
+		.exit {
+			display: flex;
+			justify-content: flex-end;
+			margin-right: 13.5vw;
+			button {
+				background-color: #d9472a;
+				border: none;
+				display: flex;
+				gap: 5px;
+				cursor: pointer;
+				align-items: center;
+				color: #000;
+				font-family: Open Sans SemiCondensed;
+				font-size: 30px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				border-radius: 10px;
+				padding: 5px 10px;
+				img {
+					width: 30px;
+				}
+			}
+		}
+	}
+}

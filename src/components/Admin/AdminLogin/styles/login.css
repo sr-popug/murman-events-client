@@ -1,0 +1,116 @@
+.login-form {
+  animation: admin-login 0.5 s ease;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.login-form .bg-black-form {
+  position: fixed;
+  z-index: 500000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+.login-form .flex {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-form .flex .login-admin {
+  position: fixed;
+  z-index: 500001;
+  background-color: #f9faff;
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+.login-form .flex .login-admin h3 {
+  color: #000;
+  font-family: Zhizn;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.login-form .flex .login-admin .input {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.login-form .flex .login-admin .input:first-child {
+  margin-top: 40px;
+}
+.login-form .flex .login-admin .input input.admin-login-input {
+  height: 60px;
+  background-color: #fc0;
+  width: 50%;
+  border-radius: 10px 0 0 10px;
+  color: #000;
+  font-family: Open Sans SemiCondensed;
+  font-size: 26px;
+  padding-left: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  outline: none;
+  border: none;
+}
+.login-form .flex .login-admin .input input.admin-login-input:autofill {
+  background-color: #fc0;
+}
+.login-form .flex .login-admin .input input:-webkit-autofill,
+.login-form .flex .login-admin .input input:-webkit-autofill:hover,
+.login-form .flex .login-admin .input input:-webkit-autofill:focus,
+.login-form .flex .login-admin .input input:-webkit-autofill:active {
+  box-shadow: 0 0 0 40px #fc0 inset !important;
+}
+.login-form .flex .login-admin .input .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  border-radius: 0px 10px 10px 0;
+  background: #fc0;
+}
+.login-form .flex .login-admin .input .icon img {
+  height: 40px;
+}
+.login-form .flex .login-admin .submit-btn {
+  display: flex;
+  justify-content: center;
+}
+.login-form .flex .login-admin button[type='submit'] {
+  color: #fff;
+  font-family: Open Sans SemiCondensed;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 10px;
+  background: #4056a1;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+  padding: 8px 10px;
+}
+.login-form .flex .login-admin .error {
+  color: #ef330e;
+  text-align: center;
+  font-size: 20px;
+  line-height: 10px;
+  font-weight: 500;
+}
+@keyframes admin-login {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

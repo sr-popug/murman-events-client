@@ -1,0 +1,110 @@
+article.events {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+	min-height: 30vh;
+
+	.slides {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 40px;
+		width: 73vw;
+		a {
+			width: 336px;
+			border-radius: 8px;
+			overflow: hidden;
+			background-color: #fff;
+			display: block;
+			position: relative;
+			border: #fff 1px solid;
+			&:hover {
+				border: 1px black solid;
+			}
+			div.type {
+				position: absolute;
+				left: 5px;
+				top: 5px;
+				background-color: #d9472a;
+				color: #fff;
+				font-family: Open Sans SemiCondensed;
+				font-size: 19.2px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				width: fit-content;
+				height: fit-content;
+				padding: 3px 7px;
+				border-radius: 8px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			img {
+				width: 336px;
+				height: 220px;
+				border-radius: 8px 8px 0 0;
+				margin-bottom: 0;
+			}
+			.content-slide {
+				width: 336px;
+				margin-top: 0;
+				border-radius: 0 0 8px 8px;
+				background-color: white;
+				padding: 10px 17px 15px 17px;
+				position: relative;
+				top: -3px;
+				.head {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					.date {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 10px;
+						background-color: #fc0;
+						color: #000;
+						font-family: Open Sans SemiCondensed;
+						font-size: 25.6px;
+						font-style: normal;
+						font-weight: 500;
+						line-height: normal;
+						width: fit-content;
+						height: fit-content;
+						padding: 1px 7px;
+					}
+					.price {
+						color: #000;
+						text-align: right;
+						font-family: Open Sans SemiCondensed;
+						font-size: 25.6px;
+						font-style: normal;
+						font-weight: 900;
+						line-height: normal;
+					}
+				}
+				h3 {
+					margin: 10px 0 20px 0;
+					color: #000;
+					font-family: Zhizn;
+					font-size: 25.6px;
+					font-style: normal;
+					font-weight: 900;
+					line-height: normal;
+					min-height: 60px;
+				}
+				.description {
+					p {
+						color: #000;
+						font-family: Open Sans SemiCondensed;
+						font-size: 19.2px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: normal;
+					}
+				}
+			}
+		}
+	}
+}

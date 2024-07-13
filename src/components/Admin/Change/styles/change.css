@@ -1,0 +1,61 @@
+section.change {
+  min-height: calc(100vh - 100px);
+  height: fit-content;
+}
+section.change table {
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+section.change table thead tr th {
+  color: #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Zhizn;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px;
+  /* 140.625% */
+  background-color: #fc0;
+}
+section.change table tr:nth-child(odd) {
+  background-color: #ffefb1;
+}
+section.change table tr:nth-child(even) {
+  background-color: #fff7d9;
+}
+section.change table tr th {
+  color: #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Zhizn;
+  font-size: 20px;
+  font-weight: 900;
+  background-color: #ffe062;
+}
+section.change table tr td {
+  color: #000;
+  font-family: Open Sans SemiCondensed;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 5px 10px;
+}
+section.change table tr td.actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+section.change table tr td.actions button,
+section.change table tr td.actions a {
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+section.change table tr td.actions button img,
+section.change table tr td.actions a img {
+  width: 30px;
+  height: 30px;
+}

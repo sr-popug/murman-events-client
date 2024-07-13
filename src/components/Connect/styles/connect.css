@@ -1,0 +1,101 @@
+section.connect {
+  width: 100vw;
+  min-height: 100vh;
+  height: fit-content;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 148px;
+}
+section.connect .top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 73vw;
+}
+section.connect .top h2 {
+  color: #000;
+  font-family: Zhizn;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+section.connect .top article.socials {
+  margin-bottom: 90px;
+  width: 420px;
+}
+section.connect .top article.socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #fc0;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 18px;
+  gap: 10px;
+  color: #000;
+  font-family: Open Sans SemiCondensed;
+  font-size: 28.8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+section.connect .top article.socials a img {
+  width: 37px;
+}
+section.connect .top article.add-event {
+  margin-bottom: 90px;
+  width: 450px;
+}
+section.connect .top article.add-event p.description {
+  color: #464646;
+  font-family: Open Sans SemiCondensed;
+  font-size: 19.2px;
+  margin-top: 18px;
+  margin-bottom: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+}
+section.connect .top article.add-event a {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d9472a;
+  padding: 10px 0px;
+  color: #fff;
+  text-align: center;
+  font-family: Open Sans SemiCondensed;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+}
+section.connect article.bottom {
+  color: #828282;
+  font-family: Open Sans SemiCondensed;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  width: 40vw;
+  min-width: 400px;
+  align-self: flex-start;
+  margin-left: 13.5vw;
+  margin-bottom: 30px;
+}
+section.connect article.bottom a {
+  text-decoration: underline;
+}
+@media screen and (max-width: 500px) {
+  section.connect .top {
+    width: 90vw;
+  }
+  section.connect article.bottom {
+    width: 90vw;
+    margin-left: 2.5vw;
+    font-size: 16px;
+  }
+}

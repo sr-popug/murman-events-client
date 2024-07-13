@@ -1,0 +1,117 @@
+.login-form {
+	animation: admin-login 0.5 s ease;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	.bg-black-form {
+		position: fixed;
+		z-index: 500000;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background-color: black;
+		opacity: 0.5;
+	}
+	.flex {
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.login-admin {
+			position: fixed;
+			z-index: 500001;
+			background-color: #f9faff;
+			border-radius: 10px;
+			padding: 20px 30px;
+			h3 {
+				color: #000;
+				font-family: Zhizn;
+				font-size: 32px;
+				font-style: normal;
+				font-weight: 900;
+				line-height: normal;
+			}
+			.input {
+				display: flex;
+				justify-content: center;
+				margin-top: 20px;
+				&:first-child {
+					margin-top: 40px;
+				}
+
+				input.admin-login-input {
+					height: 60px;
+					background-color: #fc0;
+					width: 50%;
+					border-radius: 10px 0 0 10px;
+					color: #000;
+					font-family: Open Sans SemiCondensed;
+					font-size: 26px;
+					padding-left: 10px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+					outline: none;
+					border: none;
+					&:autofill {
+						background-color: #fc0;
+					}
+				}
+				input:-webkit-autofill,
+				input:-webkit-autofill:hover,
+				input:-webkit-autofill:focus,
+				input:-webkit-autofill:active {
+					box-shadow: 0 0 0 40px #fc0 inset !important;
+				}
+				.icon {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 60px;
+					border-radius: 0px 10px 10px 0;
+					background: #fc0;
+					img {
+						height: 40px;
+					}
+				}
+			}
+			.submit-btn {
+				display: flex;
+				justify-content: center;
+			}
+			button[type='submit'] {
+				color: #fff;
+				font-family: Open Sans SemiCondensed;
+				font-size: 36px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				border-radius: 10px;
+				background: #4056a1;
+				border: none;
+				cursor: pointer;
+				margin-top: 40px;
+				padding: 8px 10px;
+			}
+			.error {
+				color: #ef330e;
+				text-align: center;
+				font-size: 20px;
+				line-height: 10px;
+				font-weight: 500;
+			}
+		}
+	}
+}
+@keyframes admin-login {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

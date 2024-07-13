@@ -1,0 +1,178 @@
+section.create {
+  margin-top: 80px;
+  height: fit-content;
+  min-height: 100vh;
+  width: 73vw;
+  margin-left: 13.5vw;
+}
+section.create h1 {
+  margin-bottom: 20px;
+  color: #000;
+  font-family: Zhizn;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+section.create form {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+}
+section.create form .left .date-time {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+section.create form .left .date-time input[name='date'],
+section.create form .left .date-time input[name='time'] {
+  width: 180px;
+}
+section.create form .left .input {
+  margin-top: 20px;
+}
+section.create form .left .input span {
+  color: #000;
+  font-family: Open Sans SemiCondensed;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 3px;
+}
+section.create form .left .input textarea {
+  resize: none;
+  font-family: Open Sans SemiCondensed;
+  font-size: 20px;
+  background-color: #fc0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+section.create form .left .input input {
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 50px;
+  outline: none;
+  border: none;
+  width: 400px;
+  text-wrap: wrap;
+  border-radius: 10px;
+  background: #fc0;
+  color: #000;
+  font-family: Open Sans SemiCondensed;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+section.create form .left .input input[name='price'] {
+  width: 120px;
+}
+section.create form .left .input .search__control {
+  width: 400px;
+  border-radius: 10px;
+  height: 50px;
+  background-color: #fc0;
+  color: #000;
+  font-family: Open Sans SemiCondensed;
+  font-size: 24px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  border-color: transparent;
+}
+section.create form .left .input .search__control .search__indicators .search__indicator-separator {
+  background-color: #000;
+}
+section.create form .left .input .search__control .search__indicators .search__indicator {
+  color: #000;
+}
+section.create form .left .input .search__control .search__value-container {
+  height: 50px;
+}
+section.create form .left .input .search__menu {
+  width: 400px;
+  background: #4056a1;
+  color: #fff;
+  font-family: Open Sans SemiCondensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+section.create form p.desc {
+  color: #000;
+  font-family: Zhizn;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+section.create form button[type='submit'] {
+  border-radius: 10px;
+  background: #4056a1;
+  border: none;
+  color: #fff;
+  margin-top: 16px;
+  padding: 8px 16px;
+  font-family: Open Sans SemiCondensed;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+section.create form .error {
+  color: #ff0f0f;
+  margin-bottom: 150px;
+}
+section.create form .right {
+  width: 400px;
+}
+section.create form .right .about-img {
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+  border: 3px solid #fc0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+section.create form .right .about-img img {
+  height: 300px;
+}
+section.create form .right .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+section.create form .right .bottom label {
+  cursor: pointer;
+}
+section.create form .right .bottom label div {
+  margin-top: 20px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-family: Open Sans SemiCondensed;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: fit-content;
+  height: fit-content;
+  background-color: #fc0;
+}
+section.create form .right .bottom #upload-photo {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+section.create form .right .bottom .delete {
+  height: 10px;
+  cursor: pointer;
+}
+section.create form .right .bottom .delete img {
+  width: 30px;
+}

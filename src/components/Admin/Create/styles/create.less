@@ -1,0 +1,187 @@
+section.create {
+	margin-top: 80px;
+	height: fit-content;
+	min-height: 100vh;
+	width: 73vw;
+	margin-left: 13.5vw;
+	h1 {
+		margin-bottom: 20px;
+		color: #000;
+		font-family: Zhizn;
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 900;
+		line-height: normal;
+	}
+	form {
+		display: flex;
+		flex-wrap: wrap-reverse;
+		justify-content: space-between;
+		.left {
+			.date-time {
+				display: flex;
+				gap: 30px;
+				margin-bottom: 30px;
+				input[name='date'],
+				input[name='time'] {
+					width: 180px;
+				}
+			}
+			.input {
+				span {
+					color: #000;
+					font-family: Open Sans SemiCondensed;
+					font-size: 25px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+					margin-left: 3px;
+				}
+				margin-top: 20px;
+				textarea {
+					resize: none;
+					font-family: Open Sans SemiCondensed;
+					font-size: 20px;
+					background-color: #fc0;
+					border-radius: 10px;
+					border: none;
+					outline: none;
+					padding: 10px;
+				}
+				input {
+					padding-left: 10px;
+					padding-right: 10px;
+					min-height: 50px;
+					outline: none;
+					border: none;
+					width: 400px;
+					text-wrap: wrap;
+					border-radius: 10px;
+					background: #fc0;
+					color: #000;
+					font-family: Open Sans SemiCondensed;
+					font-size: 25px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+				}
+				input[name='price'] {
+					width: 120px;
+				}
+				.search__control {
+					width: 400px;
+					border-radius: 10px;
+					height: 50px;
+					background-color: #fc0;
+					color: #000;
+					font-family: Open Sans SemiCondensed;
+					font-size: 24px;
+					line-height: 24px;
+					font-style: normal;
+					font-weight: 400;
+					border-color: transparent;
+					.search__indicators {
+						.search__indicator-separator {
+							background-color: #000;
+						}
+						.search__indicator {
+							color: #000;
+						}
+					}
+					.search__value-container {
+						height: 50px;
+					}
+				}
+				.search__menu {
+					width: 400px;
+					background: #4056a1;
+					color: #fff;
+					font-family: Open Sans SemiCondensed;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: normal;
+				}
+			}
+		}
+		p.desc {
+			color: #000;
+			font-family: Zhizn;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 900;
+			line-height: normal;
+		}
+		button[type='submit'] {
+			border-radius: 10px;
+			background: #4056a1;
+			border: none;
+			color: #fff;
+			margin-top: 16px;
+
+			padding: 8px 16px;
+			font-family: Open Sans SemiCondensed;
+			font-size: 28px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			cursor: pointer;
+		}
+		.error {
+			color: #ff0f0f;
+			margin-bottom: 150px;
+		}
+		.right {
+			width: 400px;
+
+			.about-img {
+				width: 400px;
+				height: 300px;
+				background-color: #fff;
+				border: 3px solid #fc0;
+				overflow: hidden;
+				border-radius: 10px;
+
+				img {
+					height: 300px;
+				}
+			}
+			.bottom {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 20px;
+				label {
+					cursor: pointer;
+					div {
+						margin-top: 20px;
+						padding: 5px 15px;
+						border-radius: 10px;
+						font-family: Open Sans SemiCondensed;
+						font-size: 25px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: normal;
+						width: fit-content;
+						height: fit-content;
+						background-color: #fc0;
+					}
+				}
+
+				#upload-photo {
+					opacity: 0;
+					position: absolute;
+					z-index: -1;
+				}
+
+				.delete {
+					height: 10px;
+					cursor: pointer;
+					img {
+						width: 30px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,77 @@
+header {
+    height: 70px;
+    width: 86vw;
+    background: transparent;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 7vw;
+    position: fixed;
+    z-index: 5000;
+    nav {
+        ul {
+            height: 70px;
+            list-style: none;
+            display: flex;
+            gap: 60px;
+            align-items: center;
+            li {
+                a {
+                    color: #000;
+                    font-family: Zhizn;
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    overflow: hidden;
+                    
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 0px;
+                        height: 2px;
+                        background-color: #4056A1;
+                        transition: all 0.5s ease;
+                    }
+                    &:hover {
+                        color: #4056A1;
+                        &::after {
+                            display: flex;
+                            width: 100%;
+                        }
+                    }
+                    
+                }
+                a.active {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .admin {
+        margin-left: 60px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #FC0;
+        height: 60%;
+        position: relative;
+        bottom: -20%;
+        padding: 0 10px;
+        border-radius: 10px;
+        p {
+            text-wrap: nowrap;
+            color: #000;
+            font-family: Zhizn;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px;
+            overflow: hidden;
+        }
+        img {
+            position: relative;
+            top: -3px;
+            width: 20px;
+        }
+    }
+}
